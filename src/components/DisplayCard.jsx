@@ -12,11 +12,7 @@ function DisplayCard() {
     loading: state.loading,
     error: state.error,
   }));
-  const [showFullDescription, setShowFullDescription] = useState(false);
 
-  const toggleDescription = () => {
-    setShowFullDescription(!showFullDescription);
-  };
   useEffect(() => {
     dispatch(fetchPosts());
   }, [dispatch]);
