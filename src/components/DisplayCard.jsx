@@ -33,22 +33,21 @@ function DisplayCard() {
           </div>
           <div className="description">
       <p>
-        {showFullDescription
-          ? post.body
-          : `${post.body.substring(0, 10)},`}
+       
+          {post.body}
         <button
           onClick={toggleDescription}
           style={{
-            backgroundColor: showFullDescription ? "#F05A22" : "white",
-            color: showFullDescription ? "black" : "#F05A22",
+            background:"transparent",color: "#F05A22",
           }}
           className="detailsBtn"
         >
-          {showFullDescription ? "Show Less" : "Read More..."}
+            Read More
+
         </button>
       </p>
 
-            <button>
+            <button className="Navigate-btn">
               <NavigateNextIcon />
             </button>
           </div>

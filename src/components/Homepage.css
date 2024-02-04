@@ -123,7 +123,7 @@ a{
 }
 
 
-.description button {
+.description .Navigate-btn {
   background-color: #f05a22;
   padding: 8px;
   border: none;
