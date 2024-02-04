@@ -32,7 +32,7 @@ function DisplayCard() {
        
           {post.body}
         <button
-          onClick={toggleDescription}
+
           style={{
             background:"transparent",color: "#F05A22",
           }}
