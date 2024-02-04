@@ -90,7 +90,7 @@ a{
 }
 .card-container {
   width: 350px;
-  height: 300px;
+  height: 400px;
   background-color: white;
   padding: 15px;
   border-radius: 15px;
@@ -116,6 +116,12 @@ a{
   align-items: center;
   justify-content: space-between;
 }
+.description p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 
 .description button {
   background-color: #f05a22;
