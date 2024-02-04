@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.details-page {
+  width: 100vw;
+  height: 100vh;
+}
+.postId {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 15px;
+}
+.postId button {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  margin-left: 2rem;
+}
+.post-info {
+  padding: 15px;
+  display: flex;
+  gap: 7rem;
+}
+
+.post-info .images {
+  width: 440px;
+  height: 340px;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.btn-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.detailsBtn {
+  padding: 8px 25px;
+  border: none;
+  border-radius: 5px;
+}
+.info-btns {
+  margin-top: 2rem;
+  width: 400px;
+}
+
+
+@media screen and (max-width:589px) {
+    .post-info{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        
+    }
+    .post-info .images{
+        display: flex;
+        justify-content: center;
+        
+        width: 100%;
+        margin: auto;
+    }
+    .images img{
+        width: 90%;
+        object-fit: cover;
+    }
+    .btn-container{
+        justify-content: center;
+    }
+    .post-name{
+        font-size: 1.7rem;
+        text-align: left;
+    }
+}
+
+
+@media screen and (max-width:861px) and (min-width:539px) {
+    .post-info{
+        width: auto;
+    }
+    .images img{
+        width: 100%;
+        flex: 1 1 0;
+    }
+    .info{
+        width: 50%;
+
+    }
+    
+}
